@@ -14,7 +14,7 @@ const createNoteSchema = z.object({
 const updateNoteSchema = z.object({
     title:   z.string().min(1).optional(),
     content: z.string().min(1).optional(),
-    tags:    z.array(string()).optional()
+    tags:    z.array(z.string()).optional()
 })
 
 module.exports = {authSchema,createNoteSchema,updateNoteSchema}
