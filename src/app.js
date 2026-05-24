@@ -5,8 +5,8 @@ const mongoSanitize = require('express-mongo-sanitize');
 const hpp = require('hpp');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
-const authRoutes = require('./routes/auth.routes');
-const notesRoutes = require('./routes/notes.routes');
+const authRoutes = require('./routes/authRoutes');
+const notesRoutes = require('./routes/notesRoutes');
 const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
